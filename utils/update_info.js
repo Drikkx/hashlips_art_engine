@@ -25,7 +25,7 @@ data.forEach((item) => {
     item.image = `${baseUri}/${item.edition}.png`;
   }
   fs.writeFileSync(
-    `${basePath}/build/json/${item.edition}`,
+    `${basePath}/build/json/${item.edition}.json`,
     JSON.stringify(item, null, 2)
   );
 });
